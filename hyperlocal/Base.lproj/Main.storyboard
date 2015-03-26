@@ -17,25 +17,41 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmn-B4-aWN" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="20" width="600" height="290"/>
-                                <color key="backgroundColor" red="0.8980392814" green="0.28627452250000002" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <rect key="frame" x="0.0" y="100" width="600" height="250"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqi-ol-EMT" userLabel="BotView">
-                                <rect key="frame" x="0.0" y="310" width="600" height="290"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="351" width="600" height="249"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeT-De-Pcf">
+                                <rect key="frame" x="0.0" y="20" width="600" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="TaL-Lo-6pm"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Rqi-ol-EMT" secondAttribute="bottom" id="7J0-26-IYb"/>
+                            <constraint firstItem="jyV-Pf-zRb" firstAttribute="top" secondItem="VeT-De-Pcf" secondAttribute="top" id="GNo-Ao-tKj"/>
                             <constraint firstItem="rmn-B4-aWN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="QuH-7d-gRe"/>
+                            <constraint firstItem="rmn-B4-aWN" firstAttribute="top" secondItem="VeT-De-Pcf" secondAttribute="bottom" id="RcX-TT-mjT"/>
                             <constraint firstItem="Rqi-ol-EMT" firstAttribute="height" secondItem="rmn-B4-aWN" secondAttribute="height" id="TCc-eX-NdL"/>
                             <constraint firstAttribute="trailing" secondItem="rmn-B4-aWN" secondAttribute="trailing" id="Yb8-Ho-WDG"/>
+                            <constraint firstAttribute="trailing" secondItem="VeT-De-Pcf" secondAttribute="trailing" id="dao-j9-hYf"/>
                             <constraint firstItem="rmn-B4-aWN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ddS-TV-Sdw"/>
                             <constraint firstItem="Rqi-ol-EMT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hBj-mV-Ka1"/>
+                            <constraint firstItem="VeT-De-Pcf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mKR-tq-dK6"/>
                             <constraint firstAttribute="trailing" secondItem="Rqi-ol-EMT" secondAttribute="trailing" id="yNP-QQ-9aL"/>
-                            <constraint firstItem="Rqi-ol-EMT" firstAttribute="top" secondItem="rmn-B4-aWN" secondAttribute="bottom" id="ylC-yM-bS3"/>
+                            <constraint firstItem="Rqi-ol-EMT" firstAttribute="top" secondItem="rmn-B4-aWN" secondAttribute="bottom" constant="1" id="ylC-yM-bS3"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ddS-TV-Sdw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="bottomView" destination="Rqi-ol-EMT" id="NuL-cG-OSG"/>

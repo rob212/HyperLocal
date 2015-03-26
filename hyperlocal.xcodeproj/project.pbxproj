@@ -83,13 +83,13 @@
 			children = (
 				45680CFC1AC42BFD0018CE27 /* Core */,
 				45680CDC1AC425280018CE27 /* AppDelegate.swift */,
-				45680CDE1AC425280018CE27 /* ViewController.swift */,
 				45680CE01AC425280018CE27 /* Main.storyboard */,
+				45680CDE1AC425280018CE27 /* ViewController.swift */,
+				45680CFE1AC42DB20018CE27 /* OfferViewController.swift */,
+				45680CFF1AC42DB20018CE27 /* OfferViewController.xib */,
 				45680CE31AC425280018CE27 /* Images.xcassets */,
 				45680CE51AC425280018CE27 /* LaunchScreen.xib */,
 				45680CDA1AC425280018CE27 /* Supporting Files */,
-				45680CFE1AC42DB20018CE27 /* OfferViewController.swift */,
-				45680CFF1AC42DB20018CE27 /* OfferViewController.xib */,
 			);
 			path = hyperlocal;
 			sourceTree = "<group>";
@@ -175,6 +175,7 @@
 				TargetAttributes = {
 					45680CD61AC425280018CE27 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = T7SMB6T3DF;
 					};
 					45680CEB1AC425280018CE27 = {
 						CreatedOnToolsVersion = 6.2;
@@ -352,10 +353,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = hyperlocal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -364,10 +368,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = hyperlocal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

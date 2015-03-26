@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol OfferViewControllerDelegate {
+
+}
+
 class OfferViewController: UIViewController {
 
     var lastLocation:CGPoint = CGPointMake(0, 0)
@@ -18,18 +22,12 @@ class OfferViewController: UIViewController {
 
     override init() {
         super.init(nibName: "OfferViewController", bundle: nil)
-
-
-        //randomize view color
-        let blueValue = CGFloat(Int(arc4random() % 255)) / 255.0
-        let greenValue = CGFloat(Int(arc4random() % 255)) / 255.0
-        let redValue = CGFloat(Int(arc4random() % 255)) / 255.0
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.layer.borderColor = UIColor.darkGrayColor().CGColor
-        self.view.layer.borderWidth = 1.0
+//        self.view.layer.borderColor = UIColor.darkGrayColor().CGColor
+//        self.view.layer.borderWidth = 1.0
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -42,15 +40,16 @@ class OfferViewController: UIViewController {
     }
 
     func detectPan(recognizer:UIPanGestureRecognizer) {
-        switch (recognizer.state) {        case UIGestureRecognizerState.Ended:
+        switch (recognizer.state) {
+        case UIGestureRecognizerState.Ended:
             if (self.view.center.x < 0) {
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.view.center = CGPointMake(-self.view.frame.width/2, self.view.frame.height/2);
                 })
             } else {
-                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: nil, animations: { () -> Void in
                     self.resetView()
-                })
+                    }, completion:nil)
             }
             break
         case UIGestureRecognizerState.Changed:
@@ -61,6 +60,9 @@ class OfferViewController: UIViewController {
                 self.resetView()
             } else {
                 self.view.center = CGPointMake(lastLocation.x + translation.x, lastLocation.y)
+                                println("\(translation.x) \(self.view.frame.width)")
+//                println(abs(translation.x - lastLocation.x))
+                self.view.alpha = (self.view.frame.width - abs(translation.x)) / self.view.frame.width
             }
             break
         default:
@@ -70,6 +72,7 @@ class OfferViewController: UIViewController {
 
     func resetView() {
         self.view.center = CGPointMake(self.view.frame.width/2, self.view.frame.height/2);
+        self.view.alpha = 1.0
     }
 
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
