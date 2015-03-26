@@ -13,6 +13,8 @@
 		45680CE41AC425280018CE27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45680CE31AC425280018CE27 /* Images.xcassets */; };
 		45680CE71AC425280018CE27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45680CE51AC425280018CE27 /* LaunchScreen.xib */; };
 		45680CF31AC425280018CE27 /* hyperlocalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45680CF21AC425280018CE27 /* hyperlocalTests.swift */; };
+		45680D001AC42DB30018CE27 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45680CFE1AC42DB20018CE27 /* OfferViewController.swift */; };
+		45680D011AC42DB30018CE27 /* OfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45680CFF1AC42DB20018CE27 /* OfferViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		45680CEC1AC425280018CE27 /* hyperlocalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyperlocalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45680CF11AC425280018CE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45680CF21AC425280018CE27 /* hyperlocalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyperlocalTests.swift; sourceTree = "<group>"; };
+		45680CFE1AC42DB20018CE27 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
+		45680CFF1AC42DB20018CE27 /* OfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,15 @@
 		45680CD91AC425280018CE27 /* hyperlocal */ = {
 			isa = PBXGroup;
 			children = (
+				45680CFC1AC42BFD0018CE27 /* Core */,
 				45680CDC1AC425280018CE27 /* AppDelegate.swift */,
 				45680CDE1AC425280018CE27 /* ViewController.swift */,
 				45680CE01AC425280018CE27 /* Main.storyboard */,
 				45680CE31AC425280018CE27 /* Images.xcassets */,
 				45680CE51AC425280018CE27 /* LaunchScreen.xib */,
 				45680CDA1AC425280018CE27 /* Supporting Files */,
+				45680CFE1AC42DB20018CE27 /* OfferViewController.swift */,
+				45680CFF1AC42DB20018CE27 /* OfferViewController.xib */,
 			);
 			path = hyperlocal;
 			sourceTree = "<group>";
@@ -110,6 +117,13 @@
 				45680CF11AC425280018CE27 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45680CFC1AC42BFD0018CE27 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45680CE21AC425280018CE27 /* Main.storyboard in Resources */,
+				45680D011AC42DB30018CE27 /* OfferViewController.xib in Resources */,
 				45680CE71AC425280018CE27 /* LaunchScreen.xib in Resources */,
 				45680CE41AC425280018CE27 /* Images.xcassets in Resources */,
 			);
@@ -213,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45680CDF1AC425280018CE27 /* ViewController.swift in Sources */,
+				45680D001AC42DB30018CE27 /* OfferViewController.swift in Sources */,
 				45680CDD1AC425280018CE27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +355,7 @@
 				INFOPLIST_FILE = hyperlocal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,6 +366,7 @@
 				INFOPLIST_FILE = hyperlocal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

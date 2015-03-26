@@ -10,16 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var bottomView: UIView!
+
+    var topOfferVC: OfferViewController!
+    var bottomOfferVC: OfferViewController!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self.addOffers()
+
+        bottomOfferVC.didMoveToParentViewController(self)
+        topOfferVC.didMoveToParentViewController(self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func addOffers() {
+
+        topOfferVC = OfferViewController()
+        bottomOfferVC = OfferViewController()
+
+        self.addChildViewController(topOfferVC)
+        self.addChildViewController(bottomOfferVC)
+
+        self.inflate(self.topView, withView: self.topOfferVC.view)
+        self.inflate(self.bottomView, withView: self.bottomOfferVC.view)
     }
 
-
+    func inflate(view: UIView, withView internalView:UIView) {
+        internalView.frame = view.bounds
+        view.addSubview(internalView)
+    }
 }
 
