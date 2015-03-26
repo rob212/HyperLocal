@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 
         bottomOfferVC.didMoveToParentViewController(self)
         topOfferVC.didMoveToParentViewController(self)
+        
     }
 
     func addOffers() {
