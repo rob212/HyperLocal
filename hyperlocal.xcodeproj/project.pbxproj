@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45680CDD1AC425280018CE27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45680CDC1AC425280018CE27 /* AppDelegate.swift */; };
+		45680CDF1AC425280018CE27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45680CDE1AC425280018CE27 /* ViewController.swift */; };
+		45680CE21AC425280018CE27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45680CE01AC425280018CE27 /* Main.storyboard */; };
+		45680CE41AC425280018CE27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45680CE31AC425280018CE27 /* Images.xcassets */; };
+		45680CE71AC425280018CE27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45680CE51AC425280018CE27 /* LaunchScreen.xib */; };
+		45680CF31AC425280018CE27 /* hyperlocalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45680CF21AC425280018CE27 /* hyperlocalTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45680CED1AC425280018CE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45680CCF1AC425280018CE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45680CD61AC425280018CE27;
+			remoteInfo = hyperlocal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45680CD71AC425280018CE27 /* hyperlocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyperlocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45680CDB1AC425280018CE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45680CDC1AC425280018CE27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45680CDE1AC425280018CE27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45680CE11AC425280018CE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45680CE31AC425280018CE27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45680CE61AC425280018CE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45680CEC1AC425280018CE27 /* hyperlocalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyperlocalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45680CF11AC425280018CE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45680CF21AC425280018CE27 /* hyperlocalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyperlocalTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45680CD41AC425280018CE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45680CE91AC425280018CE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45680CCE1AC425280018CE27 = {
+			isa = PBXGroup;
+			children = (
+				45680CD91AC425280018CE27 /* hyperlocal */,
+				45680CEF1AC425280018CE27 /* hyperlocalTests */,
+				45680CD81AC425280018CE27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45680CD81AC425280018CE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45680CD71AC425280018CE27 /* hyperlocal.app */,
+				45680CEC1AC425280018CE27 /* hyperlocalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45680CD91AC425280018CE27 /* hyperlocal */ = {
+			isa = PBXGroup;
+			children = (
+				45680CDC1AC425280018CE27 /* AppDelegate.swift */,
+				45680CDE1AC425280018CE27 /* ViewController.swift */,
+				45680CE01AC425280018CE27 /* Main.storyboard */,
+				45680CE31AC425280018CE27 /* Images.xcassets */,
+				45680CE51AC425280018CE27 /* LaunchScreen.xib */,
+				45680CDA1AC425280018CE27 /* Supporting Files */,
+			);
+			path = hyperlocal;
+			sourceTree = "<group>";
+		};
+		45680CDA1AC425280018CE27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45680CDB1AC425280018CE27 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45680CEF1AC425280018CE27 /* hyperlocalTests */ = {
+			isa = PBXGroup;
+			children = (
+				45680CF21AC425280018CE27 /* hyperlocalTests.swift */,
+				45680CF01AC425280018CE27 /* Supporting Files */,
+			);
+			path = hyperlocalTests;
+			sourceTree = "<group>";
+		};
+		45680CF01AC425280018CE27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45680CF11AC425280018CE27 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45680CD61AC425280018CE27 /* hyperlocal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45680CF61AC425280018CE27 /* Build configuration list for PBXNativeTarget "hyperlocal" */;
+			buildPhases = (
+				45680CD31AC425280018CE27 /* Sources */,
+				45680CD41AC425280018CE27 /* Frameworks */,
+				45680CD51AC425280018CE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hyperlocal;
+			productName = hyperlocal;
+			productReference = 45680CD71AC425280018CE27 /* hyperlocal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45680CEB1AC425280018CE27 /* hyperlocalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45680CF91AC425280018CE27 /* Build configuration list for PBXNativeTarget "hyperlocalTests" */;
+			buildPhases = (
+				45680CE81AC425280018CE27 /* Sources */,
+				45680CE91AC425280018CE27 /* Frameworks */,
+				45680CEA1AC425280018CE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45680CEE1AC425280018CE27 /* PBXTargetDependency */,
+			);
+			name = hyperlocalTests;
+			productName = hyperlocalTests;
+			productReference = 45680CEC1AC425280018CE27 /* hyperlocalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45680CCF1AC425280018CE27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = hackdays;
+				TargetAttributes = {
+					45680CD61AC425280018CE27 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					45680CEB1AC425280018CE27 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 45680CD61AC425280018CE27;
+					};
+				};
+			};
+			buildConfigurationList = 45680CD21AC425280018CE27 /* Build configuration list for PBXProject "hyperlocal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45680CCE1AC425280018CE27;
+			productRefGroup = 45680CD81AC425280018CE27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45680CD61AC425280018CE27 /* hyperlocal */,
+				45680CEB1AC425280018CE27 /* hyperlocalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45680CD51AC425280018CE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45680CE21AC425280018CE27 /* Main.storyboard in Resources */,
+				45680CE71AC425280018CE27 /* LaunchScreen.xib in Resources */,
+				45680CE41AC425280018CE27 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45680CEA1AC425280018CE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45680CD31AC425280018CE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45680CDF1AC425280018CE27 /* ViewController.swift in Sources */,
+				45680CDD1AC425280018CE27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45680CE81AC425280018CE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45680CF31AC425280018CE27 /* hyperlocalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45680CEE1AC425280018CE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45680CD61AC425280018CE27 /* hyperlocal */;
+			targetProxy = 45680CED1AC425280018CE27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45680CE01AC425280018CE27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45680CE11AC425280018CE27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45680CE51AC425280018CE27 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45680CE61AC425280018CE27 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45680CF41AC425280018CE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45680CF51AC425280018CE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45680CF71AC425280018CE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hyperlocal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45680CF81AC425280018CE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hyperlocal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45680CFA1AC425280018CE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hyperlocalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hyperlocal.app/hyperlocal";
+			};
+			name = Debug;
+		};
+		45680CFB1AC425280018CE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hyperlocalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hyperlocal.app/hyperlocal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45680CD21AC425280018CE27 /* Build configuration list for PBXProject "hyperlocal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45680CF41AC425280018CE27 /* Debug */,
+				45680CF51AC425280018CE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45680CF61AC425280018CE27 /* Build configuration list for PBXNativeTarget "hyperlocal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45680CF71AC425280018CE27 /* Debug */,
+				45680CF81AC425280018CE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45680CF91AC425280018CE27 /* Build configuration list for PBXNativeTarget "hyperlocalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45680CFA1AC425280018CE27 /* Debug */,
+				45680CFB1AC425280018CE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45680CCF1AC425280018CE27 /* Project object */;
+}
